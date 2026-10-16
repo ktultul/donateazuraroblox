@@ -1,0 +1,16 @@
+{
+  "name": "bagibagi-roblox-donation-worker",
+  "version": "1.0.0",
+  "description": "Versi Cloudflare Workers + Durable Objects dari server donasi BagiBagi -> Roblox",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

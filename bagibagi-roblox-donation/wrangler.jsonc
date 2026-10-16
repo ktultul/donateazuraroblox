@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bagibagi-roblox-donation",
+  "main": "src/index.js",
+  "compatibility_date": "2025-06-01",
+
+  // Tempat antrean donasi disimpan (tahan lama, tidak hilang antar permintaan).
+  "durable_objects": {
+    "bindings": [{ "name": "QUEUE", "class_name": "DonationQueue" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["DonationQueue"] }],
+
+  // Pengaturan biasa (bukan rahasia). Rahasia diisi lewat: wrangler secret put ...
+  "vars": {
+    "MAX_QUEUE": "500",
+    "LOG_RAW": "false"
+  }
+}
