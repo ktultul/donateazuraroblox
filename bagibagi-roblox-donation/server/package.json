@@ -1,0 +1,19 @@
+{
+  "name": "bagibagi-roblox-donation-server",
+  "version": "1.0.0",
+  "description": "Webhook receiver: BagiBagi -> antrean donasi -> di-poll oleh server game Roblox",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --env-file=.env index.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

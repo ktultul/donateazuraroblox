@@ -1,0 +1,21 @@
+{
+  "name": "bagibagi-roblox-donation",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "DonationServer": {
+        "$path": "roblox/server"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "DonationClient": {
+          "$path": "roblox/client"
+        }
+      }
+    }
+  }
+}
