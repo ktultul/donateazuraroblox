@@ -1,0 +1,9 @@
+node_modules/
+.env
+.dev.vars
+.wrangler/
+server/data/
+*.log
+.DS_Store
+*.rbxl
+*.rbxlx
